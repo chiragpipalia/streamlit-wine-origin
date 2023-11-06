@@ -8,11 +8,11 @@ st.title('Wine Origin')
 
 #Loading up the Regression model we created
 model = XGBClassifier()
-model.load_model('wine-origin-streamlit/xgb_model.json')
+model.load_model('xgb_model.json')
 # model.load_model('xgb_model.json')
 
 def load_data():
-	df = pd.read_csv('wine-origin-streamlit/wine-dataset/wine.data')
+	df = pd.read_csv('wine.data')
 	columns = ['Target','Alcohol','Malic acid','Ash','Alcalinity of ash','Magnesium','Total phenols','Flavanoids','Nonflavanoid phenols'
 	      ,'Proanthocyanins','Color intensity','Hue','OD280/OD315 of diluted wines','Proline'] 
 	df.columns = columns
