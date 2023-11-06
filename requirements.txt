@@ -2,4 +2,4 @@
 
 xgboost
 numpy
-sklearn
+scikit-learn
